@@ -53,4 +53,8 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(string(jsons))
+	//根据key获取val
+	fmt.Println(result["code"])
+	fmt.Println(result["message"])
+	fmt.Println(result["data"])
 }
