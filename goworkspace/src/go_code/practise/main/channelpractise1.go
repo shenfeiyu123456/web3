@@ -36,6 +36,9 @@ func sendOnly(ch chan<- int) {
 	}
 	close(ch)
 }
+
+// 缓冲长度的使用：没有缓冲则必须一边消费一边生产，即同步，如果有缓冲长度则实现了异步，
+// 即可以在缓冲长度的情况下，一边随便放，一边随便消费
 func main() {
 	//创建渠道
 	ch := make(chan int, 3)
