@@ -8,6 +8,9 @@ import (
 /*
 *
 在 go 关键字后面加一个函数，就可以创建一个线程，函数可以为已经写好的函数，也可以是匿名函数。
+channel是GO语言中定义的一种类型，专门用来在多个goroutine之间通信的线程安全的数据结构，可以
+在一个goroutine中向一个channel中发送数据，从另一个channel中接收数据，channel类似队列，
+满足先进先出的原则
 */
 func main() {
 	fmt.Println("main函数执行开始")
