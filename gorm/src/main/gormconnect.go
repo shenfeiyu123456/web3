@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"goworkspace/gorm/src/package"
+	"goworkspace/gorm/src/deletetable"
 	"time"
 
 	"gorm.io/driver/mysql"
@@ -23,5 +23,13 @@ func main() {
 
 	fmt.Println("Successfully connected to MySQL with GORM")
 	//创建user表
-	_package.Run(db)
+	//createtable.Run(db)
+	//插入user表数据
+	//inserttable.Run(db)
+	//查询数据
+	//querytable.Run(db)
+	//修改数据
+	//updatetable.Run(db)
+	//删除数据
+	deletetable.Run(db)
 }
